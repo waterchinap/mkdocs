@@ -1,176 +1,5373 @@
-<!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
-  <link rel="shortcut icon" href="../img/favicon.ico">
-  <title>审计 - 我的心得</title>
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
-  <link rel="stylesheet" href="../css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../css/theme_extra.css" type="text/css" />
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-  
-  <script>
-    // Current page data
-    var mkdocs_page_name = "\u5ba1\u8ba1";
-    var mkdocs_page_input_path = "sj.md";
-    var mkdocs_page_url = null;
-  </script>
-  
-  <script src="../js/jquery-2.1.1.min.js" defer></script>
-  <script src="../js/modernizr-2.8.3.min.js" defer></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script> 
-  
-</head>
 
-<body class="wy-body-for-nav" role="document">
 
-  <div class="wy-grid-for-nav">
 
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
     
-    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
-      <div class="wy-side-nav-search">
-        <a href=".." class="icon icon-home"> 我的心得</a>
-        <div role="search">
-  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
-    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
-  </form>
-</div>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.4.0">
+    
+    
+      
+        <title>审计 - 我的心得</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.0284f74d.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.74668098.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="我的心得" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
       </div>
-
-      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-	<ul class="current">
-	  
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="..">Home</a>
-	    </li>
-          
-            <li class="toctree-l1 current">
-		
-    <a class="current" href="./">审计</a>
-    <ul class="subnav">
-            
-    <li class="toctree-l2"><a href="#_1">审计</a></li>
-    
-        <ul>
-        
-            <li><a class="toctree-l3" href="#17">第1章：审计概述（7）</a></li>
-        
-            <li><a class="toctree-l3" href="#25">第2章：审计计划（5）</a></li>
-        
-            <li><a class="toctree-l3" href="#35">第3章：审计证据（5）</a></li>
-        
-            <li><a class="toctree-l3" href="#47">第4章：审计抽样方法（7）</a></li>
-        
-            <li><a class="toctree-l3" href="#5">第5章：信息技术对审计的影响</a></li>
-        
-            <li><a class="toctree-l3" href="#63">第6章：审计工作底稿（3）</a></li>
-        
-            <li><a class="toctree-l3" href="#76">第7章：风险评估（6）</a></li>
-        
-            <li><a class="toctree-l3" href="#85">第8章：风险应对（5）</a></li>
-        
-            <li><a class="toctree-l3" href="#910">第9章：销售与收循环的审计（10）</a></li>
-        
-            <li><a class="toctree-l3" href="#104">第10章：采购与付款循环的审计（4）</a></li>
-        
-            <li><a class="toctree-l3" href="#118">第11章：生产与存货循环的审计（8）</a></li>
-        
-            <li><a class="toctree-l3" href="#123">第12章：货币资产的审计（3）</a></li>
-        
-            <li><a class="toctree-l3" href="#135">第13章：对舞弊和法律法规的考虑（5）</a></li>
-        
-            <li><a class="toctree-l3" href="#143">第14章：审计沟通（3）</a></li>
-        
-            <li><a class="toctree-l3" href="#153">第15章：注册会计师利用他人的工作（3）</a></li>
-        
-            <li><a class="toctree-l3" href="#165">第16章：对集团财务报表的特殊考虑（5）</a></li>
-        
-            <li><a class="toctree-l3" href="#179">第17章：其他特殊项目的审计（9）</a></li>
-        
-            <li><a class="toctree-l3" href="#184">第18章：完成审计工作（4）</a></li>
-        
-            <li><a class="toctree-l3" href="#198">第19章：审计报告（8）</a></li>
-        
-            <li><a class="toctree-l3" href="#204">第20章：企业内部控制审计（4）</a></li>
-        
-            <li><a class="toctree-l3" href="#216">第21章：会计师事务所业务质量控制（6）</a></li>
-        
-            <li><a class="toctree-l3" href="#226">第22章：职业道德基本原则和概念框架（6）</a></li>
-        
-            <li><a class="toctree-l3" href="#236">第23章：审计业务对独立性的要求（6）</a></li>
-        
-        </ul>
-    
-
-    </ul>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../cg/">财管</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../kj/">会计</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../zl/">战略</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../sf/">税法</a>
-	    </li>
-          
-            <li class="toctree-l1">
-		
-    <a class="" href="../about/">About</a>
-	    </li>
-          
-        </ul>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
       </div>
-      &nbsp;
-    </nav>
-
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="..">我的心得</a>
-      </nav>
-
-      
-      <div class="wy-nav-content">
-        <div class="rst-content">
-          <div role="navigation" aria-label="breadcrumbs navigation">
-  <ul class="wy-breadcrumbs">
-    <li><a href="..">Docs</a> &raquo;</li>
-    
-      
-    
-    <li>审计</li>
-    <li class="wy-breadcrumbs-aside">
-      
-    </li>
-  </ul>
-  <hr/>
-</div>
-          <div role="main">
-            <div class="section">
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              我的心得
+            </span>
+            <span class="md-header-nav__topic">
               
+                审计
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href=".." title="我的心得" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    我的心得
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
+      Home
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        审计
+      </label>
+    
+    <a href="./" title="审计" class="md-nav__link md-nav__link--active">
+      审计
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#17" title="第1章：审计概述（7）" class="md-nav__link">
+    第1章：审计概述（7）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="第一节：审计的概念" class="md-nav__link">
+    第一节：审计的概念
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="第二节：审计要素" class="md-nav__link">
+    第二节：审计要素
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="第三节：审计目标" class="md-nav__link">
+    第三节：审计目标
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="第四节：审计基本要求" class="md-nav__link">
+    第四节：审计基本要求
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="一、遵守审计准则" class="md-nav__link">
+    一、遵守审计准则
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="二、遵守职业道德" class="md-nav__link">
+    二、遵守职业道德
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="三、保持职业怀疑" class="md-nav__link">
+    三、保持职业怀疑
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="四、运用职业判断" class="md-nav__link">
+    四、运用职业判断
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="第五节：审计风险" class="md-nav__link">
+    第五节：审计风险
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" title="一、重大错报风险" class="md-nav__link">
+    一、重大错报风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" title="二、检查风险" class="md-nav__link">
+    二、检查风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" title="三、推导公式" class="md-nav__link">
+    三、推导公式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" title="四、固有限制" class="md-nav__link">
+    四、固有限制
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" title="第六节：审计过程" class="md-nav__link">
+    第六节：审计过程
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" title="一、初步业务活动" class="md-nav__link">
+    一、初步业务活动
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" title="二、制定总体审计计划" class="md-nav__link">
+    二、制定总体审计计划
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" title="三、制定具体审计计划" class="md-nav__link">
+    三、制定具体审计计划
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" title="四、出报告" class="md-nav__link">
+    四、出报告
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25" title="第2章：审计计划（5）" class="md-nav__link">
+    第2章：审计计划（5）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" title="第一节：初步业务活动" class="md-nav__link">
+    第一节：初步业务活动
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" title="一、内容" class="md-nav__link">
+    一、内容
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" title="二、目的" class="md-nav__link">
+    二、目的
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs" title="三、审计的前提条件VS和审计工作的前提" class="md-nav__link">
+    三、审计的前提条件VS和审计工作的前提
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" title="四、审计业务约定书" class="md-nav__link">
+    四、审计业务约定书
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" title="五、变更业务约定" class="md-nav__link">
+    五、变更业务约定
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" title="第二节：总体审计策略和具体审计计划" class="md-nav__link">
+    第二节：总体审计策略和具体审计计划
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_26" title="一、总体审计策略" class="md-nav__link">
+    一、总体审计策略
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" title="二、具体审计计划" class="md-nav__link">
+    二、具体审计计划
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" title="第三节：重要性" class="md-nav__link">
+    第三节：重要性
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_29" title="一、重要性含义" class="md-nav__link">
+    一、重要性含义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" title="二、重要性的确定" class="md-nav__link">
+    二、重要性的确定
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_31" title="（一）财报整体重要性" class="md-nav__link">
+    （一）财报整体重要性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" title="（二）特定交易、账户余额或披露的重要性" class="md-nav__link">
+    （二）特定交易、账户余额或披露的重要性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" title="（三）实际执行的重要性" class="md-nav__link">
+    （三）实际执行的重要性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" title="（四）明显微小错报的临界值" class="md-nav__link">
+    （四）明显微小错报的临界值
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" title="第四节：错报" class="md-nav__link">
+    第四节：错报
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_36" title="一、定义" class="md-nav__link">
+    一、定义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" title="二、分类" class="md-nav__link">
+    二、分类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" title="三、识别" class="md-nav__link">
+    三、识别
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" title="四、错报处理流程" class="md-nav__link">
+    四、错报处理流程
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35" title="第3章：审计证据（5）" class="md-nav__link">
+    第3章：审计证据（5）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_40" title="第一节：审计证据的性质" class="md-nav__link">
+    第一节：审计证据的性质
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_41" title="第二节：审计程序" class="md-nav__link">
+    第二节：审计程序
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_42" title="一、总体审计程序" class="md-nav__link">
+    一、总体审计程序
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" title="二、具体审计程序" class="md-nav__link">
+    二、具体审计程序
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_44" title="三、函证" class="md-nav__link">
+    三、函证
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_45" title="（一）函证对象" class="md-nav__link">
+    （一）函证对象
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" title="（二）函证的方式" class="md-nav__link">
+    （二）函证的方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_47" title="（三）管理层要求不实施函证时的处理" class="md-nav__link">
+    （三）管理层要求不实施函证时的处理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_48" title="（四）函证发出前的控制" class="md-nav__link">
+    （四）函证发出前的控制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_49" title="（五）函证发出方式的控制" class="md-nav__link">
+    （五）函证发出方式的控制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_50" title="（六）积极函未收到回函的处理" class="md-nav__link">
+    （六）积极函未收到回函的处理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_51" title="（七）评价回函的可靠性" class="md-nav__link">
+    （七）评价回函的可靠性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_52" title="（八）回函存在不符事项" class="md-nav__link">
+    （八）回函存在不符事项
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_53" title="（九）限制性条款" class="md-nav__link">
+    （九）限制性条款
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_54" title="（十）关注的舞弊风险迹象及采取的措施" class="md-nav__link">
+    （十）关注的舞弊风险迹象及采取的措施
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_55" title="四、分析程序" class="md-nav__link">
+    四、分析程序
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_56" title="（一）分析程序的使用环节" class="md-nav__link">
+    （一）分析程序的使用环节
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_57" title="（二）用作实质性分析程序" class="md-nav__link">
+    （二）用作实质性分析程序
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_58" title="（三）用于总体复核阶段的分析程序" class="md-nav__link">
+    （三）用于总体复核阶段的分析程序
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#47" title="第4章：审计抽样方法（7）" class="md-nav__link">
+    第4章：审计抽样方法（7）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_59" title="第一节：审计抽样基本概念" class="md-nav__link">
+    第一节：审计抽样基本概念
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_60" title="一、审计抽样特征" class="md-nav__link">
+    一、审计抽样特征
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_61" title="二、抽样相关风险分类" class="md-nav__link">
+    二、抽样相关风险分类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_62" title="三、抽样分类" class="md-nav__link">
+    三、抽样分类
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_63" title="第二节：审计抽样在控制测试中的应用" class="md-nav__link">
+    第二节：审计抽样在控制测试中的应用
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_64" title="一、样本设计" class="md-nav__link">
+    一、样本设计
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_65" title="二、选取样本" class="md-nav__link">
+    二、选取样本
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_66" title="三、评价样本结果阶段" class="md-nav__link">
+    三、评价样本结果阶段
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_67" title="第三节 审计抽样在细节测试中的应用" class="md-nav__link">
+    第三节 审计抽样在细节测试中的应用
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_68" title="一、细节测试样本设计" class="md-nav__link">
+    一、细节测试样本设计
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_69" title="二、细节测试选取样本" class="md-nav__link">
+    二、细节测试选取样本
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_70" title="三、细节测试评价样本结果阶段" class="md-nav__link">
+    三、细节测试评价样本结果阶段
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_71" title="第四节：三种细节测试的审计抽样" class="md-nav__link">
+    第四节：三种细节测试的审计抽样
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_72" title="一、传统变量抽样" class="md-nav__link">
+    一、传统变量抽样
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_73" title="二、货币单元抽样" class="md-nav__link">
+    二、货币单元抽样
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_74" title="三、非统计抽样" class="md-nav__link">
+    三、非统计抽样
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" title="第5章：信息技术对审计的影响" class="md-nav__link">
+    第5章：信息技术对审计的影响
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_75" title="一、信息技术对内控的影响和风险" class="md-nav__link">
+    一、信息技术对内控的影响和风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_76" title="二、信息技术控制分类" class="md-nav__link">
+    二、信息技术控制分类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_77" title="三、信息技术对审计过程的影响" class="md-nav__link">
+    三、信息技术对审计过程的影响
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_78" title="四、数据分析" class="md-nav__link">
+    四、数据分析
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#63" title="第6章：审计工作底稿（3）" class="md-nav__link">
+    第6章：审计工作底稿（3）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_79" title="第一节：基本点" class="md-nav__link">
+    第一节：基本点
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_80" title="一、审计工作底稿的目的" class="md-nav__link">
+    一、审计工作底稿的目的
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_81" title="二、编制要求" class="md-nav__link">
+    二、编制要求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_82" title="三、底稿存在的形式" class="md-nav__link">
+    三、底稿存在的形式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_83" title="四、审计工作底稿内容" class="md-nav__link">
+    四、审计工作底稿内容
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_84" title="第二节：审计工作底稿要素" class="md-nav__link">
+    第二节：审计工作底稿要素
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_85" title="一、标题" class="md-nav__link">
+    一、标题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_86" title="二、审计过程记录" class="md-nav__link">
+    二、审计过程记录
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_87" title="第三节：归档" class="md-nav__link">
+    第三节：归档
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_88" title="一、性质及相关期限" class="md-nav__link">
+    一、性质及相关期限
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#60" title="二、归档期间（60日内）变动" class="md-nav__link">
+    二、归档期间（60日内）变动
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_89" title="三、归档后的变动" class="md-nav__link">
+    三、归档后的变动
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#76" title="第7章：风险评估（6）" class="md-nav__link">
+    第7章：风险评估（6）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_90" title="第一节：风险评估的作用" class="md-nav__link">
+    第一节：风险评估的作用
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_91" title="第二节：风险评估程序和信息来源" class="md-nav__link">
+    第二节：风险评估程序和信息来源
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_92" title="一、风险评估程序和信息来源" class="md-nav__link">
+    一、风险评估程序和信息来源
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_93" title="二、其他审计程序和信息来源" class="md-nav__link">
+    二、其他审计程序和信息来源
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_94" title="三、项目组内部讨论" class="md-nav__link">
+    三、项目组内部讨论
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_95" title="第二节：了解被审计单位及其环境" class="md-nav__link">
+    第二节：了解被审计单位及其环境
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_96" title="一、行业状况、法律环境和监管环境及其他外部因素" class="md-nav__link">
+    一、行业状况、法律环境和监管环境及其他外部因素
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_97" title="二、被审单位的性质" class="md-nav__link">
+    二、被审单位的性质
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_98" title="三、被审单位对会计政策的选择和运用" class="md-nav__link">
+    三、被审单位对会计政策的选择和运用
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_99" title="四、被审单位的目标、战略以及相关经营风险" class="md-nav__link">
+    四、被审单位的目标、战略以及相关经营风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_100" title="五、被审计单位财务业绩的衡量和评价" class="md-nav__link">
+    五、被审计单位财务业绩的衡量和评价
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_101" title="六、内部控制（下节详述）" class="md-nav__link">
+    六、内部控制（下节详述）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_102" title="第三节：了解被审单位内控" class="md-nav__link">
+    第三节：了解被审单位内控
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_103" title="一、内控含义" class="md-nav__link">
+    一、内控含义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_104" title="二、内控三目标" class="md-nav__link">
+    二、内控三目标
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_105" title="三、内控五要素" class="md-nav__link">
+    三、内控五要素
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_106" title="四、了解内控的范围" class="md-nav__link">
+    四、了解内控的范围
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_107" title="五、了解内控的深度" class="md-nav__link">
+    五、了解内控的深度
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_108" title="六、内控的人工和自动化成分" class="md-nav__link">
+    六、内控的人工和自动化成分
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_109" title="七、内控的局限性" class="md-nav__link">
+    七、内控的局限性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_110" title="八、整体层面和业务层面了解内控" class="md-nav__link">
+    八、整体层面和业务层面了解内控
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_111" title="九、了解内控并评估结果" class="md-nav__link">
+    九、了解内控并评估结果
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_112" title="第四节：评估重大错报风险" class="md-nav__link">
+    第四节：评估重大错报风险
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_113" title="一、评估两个层次的重大错报风险" class="md-nav__link">
+    一、评估两个层次的重大错报风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_114" title="二、需要特别考虑的重大错报风险" class="md-nav__link">
+    二、需要特别考虑的重大错报风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_115" title="三、仅通过实质性程序无法应对的重大错报风险" class="md-nav__link">
+    三、仅通过实质性程序无法应对的重大错报风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_116" title="四、对风险评估的修正" class="md-nav__link">
+    四、对风险评估的修正
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#85" title="第8章：风险应对（5）" class="md-nav__link">
+    第8章：风险应对（5）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_117" title="第一节：总体应对措施" class="md-nav__link">
+    第一节：总体应对措施
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_118" title="一、总体应对措施的内容" class="md-nav__link">
+    一、总体应对措施的内容
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_119" title="二、总体应对措施对拟实施进一步审计程序的总体审计方案的影响" class="md-nav__link">
+    二、总体应对措施对拟实施进一步审计程序的总体审计方案的影响
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_120" title="第二节：针对认定层的进一步审计程序" class="md-nav__link">
+    第二节：针对认定层的进一步审计程序
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_121" title="一、进一步审计程序的含义" class="md-nav__link">
+    一、进一步审计程序的含义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_122" title="二、设计进一步审计程序需要考虑的因素" class="md-nav__link">
+    二、设计进一步审计程序需要考虑的因素
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_123" title="三、进一步审计程序的性质、范围和时间安排" class="md-nav__link">
+    三、进一步审计程序的性质、范围和时间安排
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_124" title="第三节：控制测试" class="md-nav__link">
+    第三节：控制测试
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_125" title="一、控制测试的含义" class="md-nav__link">
+    一、控制测试的含义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_126" title="二、需要控制测试的情形" class="md-nav__link">
+    二、需要控制测试的情形
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_127" title="三、控制测试性质" class="md-nav__link">
+    三、控制测试性质
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_128" title="四、控制测试时间" class="md-nav__link">
+    四、控制测试时间
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_129" title="五、控制测试范围" class="md-nav__link">
+    五、控制测试范围
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_130" title="第四节：实质性程序" class="md-nav__link">
+    第四节：实质性程序
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_131" title="一、实质性程序含义" class="md-nav__link">
+    一、实质性程序含义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_132" title="二、实质性程序的要求" class="md-nav__link">
+    二、实质性程序的要求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_133" title="四、实质性程序的时间" class="md-nav__link">
+    四、实质性程序的时间
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_134" title="五、实质性程序的范围" class="md-nav__link">
+    五、实质性程序的范围
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_135" title="六、总结" class="md-nav__link">
+    六、总结
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#910" title="第9章：销售与收循环的审计（10）" class="md-nav__link">
+    第9章：销售与收循环的审计（10）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_136" title="第一节：销售收款循环控制活动" class="md-nav__link">
+    第一节：销售收款循环控制活动
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_137" title="第二节：销售收款循环相关内控" class="md-nav__link">
+    第二节：销售收款循环相关内控
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_138" title="第三节：销售收款循环重大错报风险评估" class="md-nav__link">
+    第三节：销售收款循环重大错报风险评估
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_139" title="第四节：销售收款循环内控测试" class="md-nav__link">
+    第四节：销售收款循环内控测试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_140" title="第五节：销售收款循环实质性程序" class="md-nav__link">
+    第五节：销售收款循环实质性程序
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_141" title="一、营业收入的实质性程序" class="md-nav__link">
+    一、营业收入的实质性程序
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_142" title="二、应收账款的实质性程序" class="md-nav__link">
+    二、应收账款的实质性程序
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104" title="第10章：采购与付款循环的审计（4）" class="md-nav__link">
+    第10章：采购与付款循环的审计（4）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_143" title="第一节：采购付款循环控制活动" class="md-nav__link">
+    第一节：采购付款循环控制活动
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_144" title="第二节：采购付款循环相关内控" class="md-nav__link">
+    第二节：采购付款循环相关内控
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_145" title="第三节：采购付款循环重大错报风险评估" class="md-nav__link">
+    第三节：采购付款循环重大错报风险评估
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_146" title="第四节：采购付款循环内控测试" class="md-nav__link">
+    第四节：采购付款循环内控测试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_147" title="第五节：采购付款循环实质性程序" class="md-nav__link">
+    第五节：采购付款循环实质性程序
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_148" title="一、应付账款的实质性程序" class="md-nav__link">
+    一、应付账款的实质性程序
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_149" title="二、一般费用的实质性程序" class="md-nav__link">
+    二、一般费用的实质性程序
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#118" title="第11章：生产与存货循环的审计（8）" class="md-nav__link">
+    第11章：生产与存货循环的审计（8）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_150" title="第一节：生产存货循环控制活动" class="md-nav__link">
+    第一节：生产存货循环控制活动
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_151" title="第二节：存货实质性程序" class="md-nav__link">
+    第二节：存货实质性程序
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_152" title="一、存货监盘" class="md-nav__link">
+    一、存货监盘
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_153" title="（一）总体要求" class="md-nav__link">
+    （一）总体要求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_154" title="（二）存货监盘的目的" class="md-nav__link">
+    （二）存货监盘的目的
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_155" title="（三）存货监盘各方责任" class="md-nav__link">
+    （三）存货监盘各方责任
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_156" title="（四）盘点计划" class="md-nav__link">
+    （四）盘点计划
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_157" title="（五）存货监盘程序" class="md-nav__link">
+    （五）存货监盘程序
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_158" title="（六）特殊情况的处理" class="md-nav__link">
+    （六）特殊情况的处理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_159" title="第三节：存货计价测试" class="md-nav__link">
+    第三节：存货计价测试
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_160" title="一、 存货单位成本测试" class="md-nav__link">
+    一、 存货单位成本测试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_161" title="二、存货跌价准备测试" class="md-nav__link">
+    二、存货跌价准备测试
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#123" title="第12章：货币资产的审计（3）" class="md-nav__link">
+    第12章：货币资产的审计（3）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_162" title="第一节：货币资金循环控制活动" class="md-nav__link">
+    第一节：货币资金循环控制活动
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_163" title="第二节：货币资金相关的重大错报风险" class="md-nav__link">
+    第二节：货币资金相关的重大错报风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_164" title="第三节：库存现金审计的实质性程序" class="md-nav__link">
+    第三节：库存现金审计的实质性程序
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_165" title="第四节：银行存款实质性程序" class="md-nav__link">
+    第四节：银行存款实质性程序
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#135" title="第13章：对舞弊和法律法规的考虑（5）" class="md-nav__link">
+    第13章：对舞弊和法律法规的考虑（5）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_166" title="第一节：对舞弊的考虑" class="md-nav__link">
+    第一节：对舞弊的考虑
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_167" title="一、舞弊概念" class="md-nav__link">
+    一、舞弊概念
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_168" title="二、对舞弊的责任" class="md-nav__link">
+    二、对舞弊的责任
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_169" title="三、相关程序和活动" class="md-nav__link">
+    三、相关程序和活动
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_170" title="识别舞弊风险" class="md-nav__link">
+    识别舞弊风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_171" title="应对舞弊风险" class="md-nav__link">
+    应对舞弊风险
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_172" title="第二节：对法律法规的考虑" class="md-nav__link">
+    第二节：对法律法规的考虑
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#143" title="第14章：审计沟通（3）" class="md-nav__link">
+    第14章：审计沟通（3）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_173" title="第一节：与治理层沟通" class="md-nav__link">
+    第一节：与治理层沟通
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_174" title="一、沟通事项" class="md-nav__link">
+    一、沟通事项
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_175" title="二、沟通过程" class="md-nav__link">
+    二、沟通过程
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_176" title="第二节：前后任注册会计师沟通" class="md-nav__link">
+    第二节：前后任注册会计师沟通
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_177" title="一、前后任定义" class="md-nav__link">
+    一、前后任定义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_178" title="二、前后任沟通要求" class="md-nav__link">
+    二、前后任沟通要求
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" title="沟通阶段（3阶段）" class="md-nav__link">
+    沟通阶段（3阶段）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#153" title="第15章：注册会计师利用他人的工作（3）" class="md-nav__link">
+    第15章：注册会计师利用他人的工作（3）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_179" title="第一节：利用内审工作" class="md-nav__link">
+    第一节：利用内审工作
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_180" title="一、评价能否利用内审工作实现审计目的" class="md-nav__link">
+    一、评价能否利用内审工作实现审计目的
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_181" title="二、多大程序上利用内审工作" class="md-nav__link">
+    二、多大程序上利用内审工作
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_182" title="三、如何利用内审工作" class="md-nav__link">
+    三、如何利用内审工作
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_183" title="第二节：利用内审提供直接协助" class="md-nav__link">
+    第二节：利用内审提供直接协助
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_184" title="一、评价是否能够利用内审提供直接协助" class="md-nav__link">
+    一、评价是否能够利用内审提供直接协助
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_185" title="二、多大程度上利用内审直接协助" class="md-nav__link">
+    二、多大程度上利用内审直接协助
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_186" title="三、如何利用内审提供直接协助" class="md-nav__link">
+    三、如何利用内审提供直接协助
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_187" title="第三节：利用专家工作" class="md-nav__link">
+    第三节：利用专家工作
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_188" title="一、专家范围" class="md-nav__link">
+    一、专家范围
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_189" title="二、专家类型" class="md-nav__link">
+    二、专家类型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_190" title="三、评价专家工作是否能实现审计目的" class="md-nav__link">
+    三、评价专家工作是否能实现审计目的
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#165" title="第16章：对集团财务报表的特殊考虑（5）" class="md-nav__link">
+    第16章：对集团财务报表的特殊考虑（5）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_191" title="第一节、集团财报审计的考虑" class="md-nav__link">
+    第一节、集团财报审计的考虑
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_192" title="第二节、财务重大性及特别风险" class="md-nav__link">
+    第二节、财务重大性及特别风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_193" title="第三节、集团层面分析" class="md-nav__link">
+    第三节、集团层面分析
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_194" title="一、 重要性" class="md-nav__link">
+    一、 重要性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_195" title="二、了解集团层面信息" class="md-nav__link">
+    二、了解集团层面信息
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_196" title="第四节：全面或局部审计" class="md-nav__link">
+    第四节：全面或局部审计
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_197" title="第五节：了解组成部分注册会计师" class="md-nav__link">
+    第五节：了解组成部分注册会计师
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_198" title="第六节：集团项目组审计的责任与要求" class="md-nav__link">
+    第六节：集团项目组审计的责任与要求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_199" title="第七节：风险评估（必做）" class="md-nav__link">
+    第七节：风险评估（必做）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_200" title="第八节：评价特别风险" class="md-nav__link">
+    第八节：评价特别风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_201" title="第九节：参与组成部分工作的方式" class="md-nav__link">
+    第九节：参与组成部分工作的方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_202" title="第十节：与组成部分注册会计师沟通" class="md-nav__link">
+    第十节：与组成部分注册会计师沟通
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_203" title="补充" class="md-nav__link">
+    补充
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#179" title="第17章：其他特殊项目的审计（9）" class="md-nav__link">
+    第17章：其他特殊项目的审计（9）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_204" title="第一节：会计估计审计" class="md-nav__link">
+    第一节：会计估计审计
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_205" title="第二节：关联方审计" class="md-nav__link">
+    第二节：关联方审计
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_206" title="第三节：期初余额审计" class="md-nav__link">
+    第三节：期初余额审计
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_207" title="第四节：持续经营能力假设" class="md-nav__link">
+    第四节：持续经营能力假设
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#184" title="第18章：完成审计工作（4）" class="md-nav__link">
+    第18章：完成审计工作（4）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_208" title="第一节：完成审计工作概述" class="md-nav__link">
+    第一节：完成审计工作概述
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_209" title="一、评价错报" class="md-nav__link">
+    一、评价错报
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-" title="二、复核底稿-内部复核" class="md-nav__link">
+    二、复核底稿-内部复核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-_1" title="三、复核底稿-项目质量控制复核" class="md-nav__link">
+    三、复核底稿-项目质量控制复核
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_210" title="第二节：期后事项" class="md-nav__link">
+    第二节：期后事项
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_211" title="一、第一阶段期后事项（财报日至审报日）" class="md-nav__link">
+    一、第一阶段期后事项（财报日至审报日）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_212" title="二、第二阶段期后事项（审计报告日至财报报出日）" class="md-nav__link">
+    二、第二阶段期后事项（审计报告日至财报报出日）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_213" title="三、第三阶段期后事项（财报报出日后）" class="md-nav__link">
+    三、第三阶段期后事项（财报报出日后）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_214" title="第三节：管理层声明" class="md-nav__link">
+    第三节：管理层声明
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_215" title="一、声明的性质" class="md-nav__link">
+    一、声明的性质
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_216" title="二、声明的内容" class="md-nav__link">
+    二、声明的内容
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_217" title="三、声明的日期" class="md-nav__link">
+    三、声明的日期
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_218" title="四、与其他证据不一致" class="md-nav__link">
+    四、与其他证据不一致
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_219" title="五、无法表示意见情形" class="md-nav__link">
+    五、无法表示意见情形
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#198" title="第19章：审计报告（8）" class="md-nav__link">
+    第19章：审计报告（8）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_220" title="第一节：审计报告概述" class="md-nav__link">
+    第一节：审计报告概述
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_221" title="一、含义" class="md-nav__link">
+    一、含义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_222" title="二、审计报告日" class="md-nav__link">
+    二、审计报告日
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_223" title="三、补充信息" class="md-nav__link">
+    三、补充信息
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_224" title="第二节：关键审计事项" class="md-nav__link">
+    第二节：关键审计事项
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_225" title="一、关键审计事项定义" class="md-nav__link">
+    一、关键审计事项定义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_226" title="二、关键审计事项决策" class="md-nav__link">
+    二、关键审计事项决策
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_227" title="三、关键审计事项数量" class="md-nav__link">
+    三、关键审计事项数量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_228" title="四、关键审计事项披露要求" class="md-nav__link">
+    四、关键审计事项披露要求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_229" title="五、关键审计事项不披露的情形" class="md-nav__link">
+    五、关键审计事项不披露的情形
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_230" title="六、关键审计事项的描述" class="md-nav__link">
+    六、关键审计事项的描述
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_231" title="七、关键审计事项的原始信息" class="md-nav__link">
+    七、关键审计事项的原始信息
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_232" title="第三节：非无保留意见" class="md-nav__link">
+    第三节：非无保留意见
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_233" title="一、非无保留意见处理原则" class="md-nav__link">
+    一、非无保留意见处理原则
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_234" title="二、意见统一性" class="md-nav__link">
+    二、意见统一性
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_235" title="第四节：强调事项段和其他事项段" class="md-nav__link">
+    第四节：强调事项段和其他事项段
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_236" title="一、强调事项段" class="md-nav__link">
+    一、强调事项段
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_237" title="二、其他事项段" class="md-nav__link">
+    二、其他事项段
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_238" title="第五节：比较信息" class="md-nav__link">
+    第五节：比较信息
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_239" title="一、对应数据" class="md-nav__link">
+    一、对应数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_240" title="二、比较财务报表" class="md-nav__link">
+    二、比较财务报表
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_241" title="第六节：其他信息" class="md-nav__link">
+    第六节：其他信息
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_242" title="一、其他信息含义" class="md-nav__link">
+    一、其他信息含义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_243" title="二、其他信息对注册会计师的要求" class="md-nav__link">
+    二、其他信息对注册会计师的要求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_244" title="三、其他信息的应对措施" class="md-nav__link">
+    三、其他信息的应对措施
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#204" title="第20章：企业内部控制审计（4）" class="md-nav__link">
+    第20章：企业内部控制审计（4）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_245" title="第一节：内控审计含义" class="md-nav__link">
+    第一节：内控审计含义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_246" title="第二节：计划内控审计工作" class="md-nav__link">
+    第二节：计划内控审计工作
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_247" title="一、考虑事项" class="md-nav__link">
+    一、考虑事项
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_248" title="二、总体审计策略" class="md-nav__link">
+    二、总体审计策略
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_249" title="三、具体审计计划" class="md-nav__link">
+    三、具体审计计划
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_250" title="第三节：审计实施" class="md-nav__link">
+    第三节：审计实施
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_251" title="第四节：测试控制有效性" class="md-nav__link">
+    第四节：测试控制有效性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_252" title="第五节：内控缺陷评价" class="md-nav__link">
+    第五节：内控缺陷评价
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_253" title="第六节：内控审计报告" class="md-nav__link">
+    第六节：内控审计报告
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#216" title="第21章：会计师事务所业务质量控制（6）" class="md-nav__link">
+    第21章：会计师事务所业务质量控制（6）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#226" title="第22章：职业道德基本原则和概念框架（6）" class="md-nav__link">
+    第22章：职业道德基本原则和概念框架（6）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_254" title="第一节：职业道德基本原则" class="md-nav__link">
+    第一节：职业道德基本原则
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_255" title="第二节：职业道德概念框架" class="md-nav__link">
+    第二节：职业道德概念框架
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_256" title="第三节：具体运用" class="md-nav__link">
+    第三节：具体运用
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#236" title="第23章：审计业务对独立性的要求（6）" class="md-nav__link">
+    第23章：审计业务对独立性的要求（6）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_257" title="第一节：独立性的基础概念" class="md-nav__link">
+    第一节：独立性的基础概念
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_258" title="一、网络事务所" class="md-nav__link">
+    一、网络事务所
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_259" title="二、公众利益实体" class="md-nav__link">
+    二、公众利益实体
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_260" title="三、关联实体" class="md-nav__link">
+    三、关联实体
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_261" title="四、保持独立性期间" class="md-nav__link">
+    四、保持独立性期间
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_262" title="五、近亲属" class="md-nav__link">
+    五、近亲属
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_263" title="六、经济利益" class="md-nav__link">
+    六、经济利益
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_264" title="七、关键审计合伙人" class="md-nav__link">
+    七、关键审计合伙人
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_265" title="第二节：对独立性的影响" class="md-nav__link">
+    第二节：对独立性的影响
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_266" title="一、经济利益" class="md-nav__link">
+    一、经济利益
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_267" title="二、贷款和担保" class="md-nav__link">
+    二、贷款和担保
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_268" title="三、商业关系" class="md-nav__link">
+    三、商业关系
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_269" title="四、家庭和私人关系" class="md-nav__link">
+    四、家庭和私人关系
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_270" title="五、人员交流" class="md-nav__link">
+    五、人员交流
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_271" title="六、长期关系" class="md-nav__link">
+    六、长期关系
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_272" title="七、提供非鉴证服务" class="md-nav__link">
+    七、提供非鉴证服务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_273" title="八、收费" class="md-nav__link">
+    八、收费
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../cg/" title="财管" class="md-nav__link">
+      财管
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../kj/" title="会计" class="md-nav__link">
+      会计
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../zl/" title="战略" class="md-nav__link">
+      战略
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../sf/" title="税法" class="md-nav__link">
+      税法
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../about/" title="About" class="md-nav__link">
+      About
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#17" title="第1章：审计概述（7）" class="md-nav__link">
+    第1章：审计概述（7）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" title="第一节：审计的概念" class="md-nav__link">
+    第一节：审计的概念
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="第二节：审计要素" class="md-nav__link">
+    第二节：审计要素
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" title="第三节：审计目标" class="md-nav__link">
+    第三节：审计目标
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" title="第四节：审计基本要求" class="md-nav__link">
+    第四节：审计基本要求
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" title="一、遵守审计准则" class="md-nav__link">
+    一、遵守审计准则
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" title="二、遵守职业道德" class="md-nav__link">
+    二、遵守职业道德
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" title="三、保持职业怀疑" class="md-nav__link">
+    三、保持职业怀疑
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" title="四、运用职业判断" class="md-nav__link">
+    四、运用职业判断
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" title="第五节：审计风险" class="md-nav__link">
+    第五节：审计风险
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" title="一、重大错报风险" class="md-nav__link">
+    一、重大错报风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" title="二、检查风险" class="md-nav__link">
+    二、检查风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" title="三、推导公式" class="md-nav__link">
+    三、推导公式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" title="四、固有限制" class="md-nav__link">
+    四、固有限制
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" title="第六节：审计过程" class="md-nav__link">
+    第六节：审计过程
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_16" title="一、初步业务活动" class="md-nav__link">
+    一、初步业务活动
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_17" title="二、制定总体审计计划" class="md-nav__link">
+    二、制定总体审计计划
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" title="三、制定具体审计计划" class="md-nav__link">
+    三、制定具体审计计划
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_19" title="四、出报告" class="md-nav__link">
+    四、出报告
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#25" title="第2章：审计计划（5）" class="md-nav__link">
+    第2章：审计计划（5）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_20" title="第一节：初步业务活动" class="md-nav__link">
+    第一节：初步业务活动
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" title="一、内容" class="md-nav__link">
+    一、内容
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" title="二、目的" class="md-nav__link">
+    二、目的
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vs" title="三、审计的前提条件VS和审计工作的前提" class="md-nav__link">
+    三、审计的前提条件VS和审计工作的前提
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_23" title="四、审计业务约定书" class="md-nav__link">
+    四、审计业务约定书
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" title="五、变更业务约定" class="md-nav__link">
+    五、变更业务约定
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_25" title="第二节：总体审计策略和具体审计计划" class="md-nav__link">
+    第二节：总体审计策略和具体审计计划
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_26" title="一、总体审计策略" class="md-nav__link">
+    一、总体审计策略
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_27" title="二、具体审计计划" class="md-nav__link">
+    二、具体审计计划
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" title="第三节：重要性" class="md-nav__link">
+    第三节：重要性
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_29" title="一、重要性含义" class="md-nav__link">
+    一、重要性含义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" title="二、重要性的确定" class="md-nav__link">
+    二、重要性的确定
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_31" title="（一）财报整体重要性" class="md-nav__link">
+    （一）财报整体重要性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" title="（二）特定交易、账户余额或披露的重要性" class="md-nav__link">
+    （二）特定交易、账户余额或披露的重要性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_33" title="（三）实际执行的重要性" class="md-nav__link">
+    （三）实际执行的重要性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_34" title="（四）明显微小错报的临界值" class="md-nav__link">
+    （四）明显微小错报的临界值
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_35" title="第四节：错报" class="md-nav__link">
+    第四节：错报
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_36" title="一、定义" class="md-nav__link">
+    一、定义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_37" title="二、分类" class="md-nav__link">
+    二、分类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_38" title="三、识别" class="md-nav__link">
+    三、识别
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_39" title="四、错报处理流程" class="md-nav__link">
+    四、错报处理流程
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#35" title="第3章：审计证据（5）" class="md-nav__link">
+    第3章：审计证据（5）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_40" title="第一节：审计证据的性质" class="md-nav__link">
+    第一节：审计证据的性质
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_41" title="第二节：审计程序" class="md-nav__link">
+    第二节：审计程序
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_42" title="一、总体审计程序" class="md-nav__link">
+    一、总体审计程序
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_43" title="二、具体审计程序" class="md-nav__link">
+    二、具体审计程序
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_44" title="三、函证" class="md-nav__link">
+    三、函证
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_45" title="（一）函证对象" class="md-nav__link">
+    （一）函证对象
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_46" title="（二）函证的方式" class="md-nav__link">
+    （二）函证的方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_47" title="（三）管理层要求不实施函证时的处理" class="md-nav__link">
+    （三）管理层要求不实施函证时的处理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_48" title="（四）函证发出前的控制" class="md-nav__link">
+    （四）函证发出前的控制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_49" title="（五）函证发出方式的控制" class="md-nav__link">
+    （五）函证发出方式的控制
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_50" title="（六）积极函未收到回函的处理" class="md-nav__link">
+    （六）积极函未收到回函的处理
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_51" title="（七）评价回函的可靠性" class="md-nav__link">
+    （七）评价回函的可靠性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_52" title="（八）回函存在不符事项" class="md-nav__link">
+    （八）回函存在不符事项
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_53" title="（九）限制性条款" class="md-nav__link">
+    （九）限制性条款
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_54" title="（十）关注的舞弊风险迹象及采取的措施" class="md-nav__link">
+    （十）关注的舞弊风险迹象及采取的措施
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_55" title="四、分析程序" class="md-nav__link">
+    四、分析程序
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_56" title="（一）分析程序的使用环节" class="md-nav__link">
+    （一）分析程序的使用环节
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_57" title="（二）用作实质性分析程序" class="md-nav__link">
+    （二）用作实质性分析程序
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_58" title="（三）用于总体复核阶段的分析程序" class="md-nav__link">
+    （三）用于总体复核阶段的分析程序
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#47" title="第4章：审计抽样方法（7）" class="md-nav__link">
+    第4章：审计抽样方法（7）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_59" title="第一节：审计抽样基本概念" class="md-nav__link">
+    第一节：审计抽样基本概念
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_60" title="一、审计抽样特征" class="md-nav__link">
+    一、审计抽样特征
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_61" title="二、抽样相关风险分类" class="md-nav__link">
+    二、抽样相关风险分类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_62" title="三、抽样分类" class="md-nav__link">
+    三、抽样分类
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_63" title="第二节：审计抽样在控制测试中的应用" class="md-nav__link">
+    第二节：审计抽样在控制测试中的应用
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_64" title="一、样本设计" class="md-nav__link">
+    一、样本设计
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_65" title="二、选取样本" class="md-nav__link">
+    二、选取样本
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_66" title="三、评价样本结果阶段" class="md-nav__link">
+    三、评价样本结果阶段
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_67" title="第三节 审计抽样在细节测试中的应用" class="md-nav__link">
+    第三节 审计抽样在细节测试中的应用
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_68" title="一、细节测试样本设计" class="md-nav__link">
+    一、细节测试样本设计
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_69" title="二、细节测试选取样本" class="md-nav__link">
+    二、细节测试选取样本
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_70" title="三、细节测试评价样本结果阶段" class="md-nav__link">
+    三、细节测试评价样本结果阶段
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_71" title="第四节：三种细节测试的审计抽样" class="md-nav__link">
+    第四节：三种细节测试的审计抽样
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_72" title="一、传统变量抽样" class="md-nav__link">
+    一、传统变量抽样
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_73" title="二、货币单元抽样" class="md-nav__link">
+    二、货币单元抽样
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_74" title="三、非统计抽样" class="md-nav__link">
+    三、非统计抽样
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" title="第5章：信息技术对审计的影响" class="md-nav__link">
+    第5章：信息技术对审计的影响
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_75" title="一、信息技术对内控的影响和风险" class="md-nav__link">
+    一、信息技术对内控的影响和风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_76" title="二、信息技术控制分类" class="md-nav__link">
+    二、信息技术控制分类
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_77" title="三、信息技术对审计过程的影响" class="md-nav__link">
+    三、信息技术对审计过程的影响
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_78" title="四、数据分析" class="md-nav__link">
+    四、数据分析
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#63" title="第6章：审计工作底稿（3）" class="md-nav__link">
+    第6章：审计工作底稿（3）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_79" title="第一节：基本点" class="md-nav__link">
+    第一节：基本点
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_80" title="一、审计工作底稿的目的" class="md-nav__link">
+    一、审计工作底稿的目的
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_81" title="二、编制要求" class="md-nav__link">
+    二、编制要求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_82" title="三、底稿存在的形式" class="md-nav__link">
+    三、底稿存在的形式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_83" title="四、审计工作底稿内容" class="md-nav__link">
+    四、审计工作底稿内容
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_84" title="第二节：审计工作底稿要素" class="md-nav__link">
+    第二节：审计工作底稿要素
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_85" title="一、标题" class="md-nav__link">
+    一、标题
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_86" title="二、审计过程记录" class="md-nav__link">
+    二、审计过程记录
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_87" title="第三节：归档" class="md-nav__link">
+    第三节：归档
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_88" title="一、性质及相关期限" class="md-nav__link">
+    一、性质及相关期限
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#60" title="二、归档期间（60日内）变动" class="md-nav__link">
+    二、归档期间（60日内）变动
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_89" title="三、归档后的变动" class="md-nav__link">
+    三、归档后的变动
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#76" title="第7章：风险评估（6）" class="md-nav__link">
+    第7章：风险评估（6）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_90" title="第一节：风险评估的作用" class="md-nav__link">
+    第一节：风险评估的作用
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_91" title="第二节：风险评估程序和信息来源" class="md-nav__link">
+    第二节：风险评估程序和信息来源
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_92" title="一、风险评估程序和信息来源" class="md-nav__link">
+    一、风险评估程序和信息来源
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_93" title="二、其他审计程序和信息来源" class="md-nav__link">
+    二、其他审计程序和信息来源
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_94" title="三、项目组内部讨论" class="md-nav__link">
+    三、项目组内部讨论
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_95" title="第二节：了解被审计单位及其环境" class="md-nav__link">
+    第二节：了解被审计单位及其环境
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_96" title="一、行业状况、法律环境和监管环境及其他外部因素" class="md-nav__link">
+    一、行业状况、法律环境和监管环境及其他外部因素
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_97" title="二、被审单位的性质" class="md-nav__link">
+    二、被审单位的性质
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_98" title="三、被审单位对会计政策的选择和运用" class="md-nav__link">
+    三、被审单位对会计政策的选择和运用
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_99" title="四、被审单位的目标、战略以及相关经营风险" class="md-nav__link">
+    四、被审单位的目标、战略以及相关经营风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_100" title="五、被审计单位财务业绩的衡量和评价" class="md-nav__link">
+    五、被审计单位财务业绩的衡量和评价
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_101" title="六、内部控制（下节详述）" class="md-nav__link">
+    六、内部控制（下节详述）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_102" title="第三节：了解被审单位内控" class="md-nav__link">
+    第三节：了解被审单位内控
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_103" title="一、内控含义" class="md-nav__link">
+    一、内控含义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_104" title="二、内控三目标" class="md-nav__link">
+    二、内控三目标
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_105" title="三、内控五要素" class="md-nav__link">
+    三、内控五要素
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_106" title="四、了解内控的范围" class="md-nav__link">
+    四、了解内控的范围
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_107" title="五、了解内控的深度" class="md-nav__link">
+    五、了解内控的深度
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_108" title="六、内控的人工和自动化成分" class="md-nav__link">
+    六、内控的人工和自动化成分
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_109" title="七、内控的局限性" class="md-nav__link">
+    七、内控的局限性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_110" title="八、整体层面和业务层面了解内控" class="md-nav__link">
+    八、整体层面和业务层面了解内控
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_111" title="九、了解内控并评估结果" class="md-nav__link">
+    九、了解内控并评估结果
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_112" title="第四节：评估重大错报风险" class="md-nav__link">
+    第四节：评估重大错报风险
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_113" title="一、评估两个层次的重大错报风险" class="md-nav__link">
+    一、评估两个层次的重大错报风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_114" title="二、需要特别考虑的重大错报风险" class="md-nav__link">
+    二、需要特别考虑的重大错报风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_115" title="三、仅通过实质性程序无法应对的重大错报风险" class="md-nav__link">
+    三、仅通过实质性程序无法应对的重大错报风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_116" title="四、对风险评估的修正" class="md-nav__link">
+    四、对风险评估的修正
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#85" title="第8章：风险应对（5）" class="md-nav__link">
+    第8章：风险应对（5）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_117" title="第一节：总体应对措施" class="md-nav__link">
+    第一节：总体应对措施
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_118" title="一、总体应对措施的内容" class="md-nav__link">
+    一、总体应对措施的内容
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_119" title="二、总体应对措施对拟实施进一步审计程序的总体审计方案的影响" class="md-nav__link">
+    二、总体应对措施对拟实施进一步审计程序的总体审计方案的影响
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_120" title="第二节：针对认定层的进一步审计程序" class="md-nav__link">
+    第二节：针对认定层的进一步审计程序
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_121" title="一、进一步审计程序的含义" class="md-nav__link">
+    一、进一步审计程序的含义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_122" title="二、设计进一步审计程序需要考虑的因素" class="md-nav__link">
+    二、设计进一步审计程序需要考虑的因素
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_123" title="三、进一步审计程序的性质、范围和时间安排" class="md-nav__link">
+    三、进一步审计程序的性质、范围和时间安排
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_124" title="第三节：控制测试" class="md-nav__link">
+    第三节：控制测试
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_125" title="一、控制测试的含义" class="md-nav__link">
+    一、控制测试的含义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_126" title="二、需要控制测试的情形" class="md-nav__link">
+    二、需要控制测试的情形
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_127" title="三、控制测试性质" class="md-nav__link">
+    三、控制测试性质
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_128" title="四、控制测试时间" class="md-nav__link">
+    四、控制测试时间
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_129" title="五、控制测试范围" class="md-nav__link">
+    五、控制测试范围
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_130" title="第四节：实质性程序" class="md-nav__link">
+    第四节：实质性程序
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_131" title="一、实质性程序含义" class="md-nav__link">
+    一、实质性程序含义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_132" title="二、实质性程序的要求" class="md-nav__link">
+    二、实质性程序的要求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_133" title="四、实质性程序的时间" class="md-nav__link">
+    四、实质性程序的时间
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_134" title="五、实质性程序的范围" class="md-nav__link">
+    五、实质性程序的范围
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_135" title="六、总结" class="md-nav__link">
+    六、总结
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#910" title="第9章：销售与收循环的审计（10）" class="md-nav__link">
+    第9章：销售与收循环的审计（10）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_136" title="第一节：销售收款循环控制活动" class="md-nav__link">
+    第一节：销售收款循环控制活动
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_137" title="第二节：销售收款循环相关内控" class="md-nav__link">
+    第二节：销售收款循环相关内控
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_138" title="第三节：销售收款循环重大错报风险评估" class="md-nav__link">
+    第三节：销售收款循环重大错报风险评估
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_139" title="第四节：销售收款循环内控测试" class="md-nav__link">
+    第四节：销售收款循环内控测试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_140" title="第五节：销售收款循环实质性程序" class="md-nav__link">
+    第五节：销售收款循环实质性程序
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_141" title="一、营业收入的实质性程序" class="md-nav__link">
+    一、营业收入的实质性程序
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_142" title="二、应收账款的实质性程序" class="md-nav__link">
+    二、应收账款的实质性程序
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#104" title="第10章：采购与付款循环的审计（4）" class="md-nav__link">
+    第10章：采购与付款循环的审计（4）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_143" title="第一节：采购付款循环控制活动" class="md-nav__link">
+    第一节：采购付款循环控制活动
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_144" title="第二节：采购付款循环相关内控" class="md-nav__link">
+    第二节：采购付款循环相关内控
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_145" title="第三节：采购付款循环重大错报风险评估" class="md-nav__link">
+    第三节：采购付款循环重大错报风险评估
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_146" title="第四节：采购付款循环内控测试" class="md-nav__link">
+    第四节：采购付款循环内控测试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_147" title="第五节：采购付款循环实质性程序" class="md-nav__link">
+    第五节：采购付款循环实质性程序
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_148" title="一、应付账款的实质性程序" class="md-nav__link">
+    一、应付账款的实质性程序
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_149" title="二、一般费用的实质性程序" class="md-nav__link">
+    二、一般费用的实质性程序
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#118" title="第11章：生产与存货循环的审计（8）" class="md-nav__link">
+    第11章：生产与存货循环的审计（8）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_150" title="第一节：生产存货循环控制活动" class="md-nav__link">
+    第一节：生产存货循环控制活动
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_151" title="第二节：存货实质性程序" class="md-nav__link">
+    第二节：存货实质性程序
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_152" title="一、存货监盘" class="md-nav__link">
+    一、存货监盘
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_153" title="（一）总体要求" class="md-nav__link">
+    （一）总体要求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_154" title="（二）存货监盘的目的" class="md-nav__link">
+    （二）存货监盘的目的
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_155" title="（三）存货监盘各方责任" class="md-nav__link">
+    （三）存货监盘各方责任
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_156" title="（四）盘点计划" class="md-nav__link">
+    （四）盘点计划
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_157" title="（五）存货监盘程序" class="md-nav__link">
+    （五）存货监盘程序
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_158" title="（六）特殊情况的处理" class="md-nav__link">
+    （六）特殊情况的处理
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_159" title="第三节：存货计价测试" class="md-nav__link">
+    第三节：存货计价测试
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_160" title="一、 存货单位成本测试" class="md-nav__link">
+    一、 存货单位成本测试
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_161" title="二、存货跌价准备测试" class="md-nav__link">
+    二、存货跌价准备测试
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#123" title="第12章：货币资产的审计（3）" class="md-nav__link">
+    第12章：货币资产的审计（3）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_162" title="第一节：货币资金循环控制活动" class="md-nav__link">
+    第一节：货币资金循环控制活动
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_163" title="第二节：货币资金相关的重大错报风险" class="md-nav__link">
+    第二节：货币资金相关的重大错报风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_164" title="第三节：库存现金审计的实质性程序" class="md-nav__link">
+    第三节：库存现金审计的实质性程序
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_165" title="第四节：银行存款实质性程序" class="md-nav__link">
+    第四节：银行存款实质性程序
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#135" title="第13章：对舞弊和法律法规的考虑（5）" class="md-nav__link">
+    第13章：对舞弊和法律法规的考虑（5）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_166" title="第一节：对舞弊的考虑" class="md-nav__link">
+    第一节：对舞弊的考虑
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_167" title="一、舞弊概念" class="md-nav__link">
+    一、舞弊概念
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_168" title="二、对舞弊的责任" class="md-nav__link">
+    二、对舞弊的责任
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_169" title="三、相关程序和活动" class="md-nav__link">
+    三、相关程序和活动
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_170" title="识别舞弊风险" class="md-nav__link">
+    识别舞弊风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_171" title="应对舞弊风险" class="md-nav__link">
+    应对舞弊风险
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_172" title="第二节：对法律法规的考虑" class="md-nav__link">
+    第二节：对法律法规的考虑
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#143" title="第14章：审计沟通（3）" class="md-nav__link">
+    第14章：审计沟通（3）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_173" title="第一节：与治理层沟通" class="md-nav__link">
+    第一节：与治理层沟通
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_174" title="一、沟通事项" class="md-nav__link">
+    一、沟通事项
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_175" title="二、沟通过程" class="md-nav__link">
+    二、沟通过程
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_176" title="第二节：前后任注册会计师沟通" class="md-nav__link">
+    第二节：前后任注册会计师沟通
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_177" title="一、前后任定义" class="md-nav__link">
+    一、前后任定义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_178" title="二、前后任沟通要求" class="md-nav__link">
+    二、前后任沟通要求
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" title="沟通阶段（3阶段）" class="md-nav__link">
+    沟通阶段（3阶段）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#153" title="第15章：注册会计师利用他人的工作（3）" class="md-nav__link">
+    第15章：注册会计师利用他人的工作（3）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_179" title="第一节：利用内审工作" class="md-nav__link">
+    第一节：利用内审工作
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_180" title="一、评价能否利用内审工作实现审计目的" class="md-nav__link">
+    一、评价能否利用内审工作实现审计目的
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_181" title="二、多大程序上利用内审工作" class="md-nav__link">
+    二、多大程序上利用内审工作
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_182" title="三、如何利用内审工作" class="md-nav__link">
+    三、如何利用内审工作
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_183" title="第二节：利用内审提供直接协助" class="md-nav__link">
+    第二节：利用内审提供直接协助
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_184" title="一、评价是否能够利用内审提供直接协助" class="md-nav__link">
+    一、评价是否能够利用内审提供直接协助
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_185" title="二、多大程度上利用内审直接协助" class="md-nav__link">
+    二、多大程度上利用内审直接协助
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_186" title="三、如何利用内审提供直接协助" class="md-nav__link">
+    三、如何利用内审提供直接协助
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_187" title="第三节：利用专家工作" class="md-nav__link">
+    第三节：利用专家工作
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_188" title="一、专家范围" class="md-nav__link">
+    一、专家范围
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_189" title="二、专家类型" class="md-nav__link">
+    二、专家类型
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_190" title="三、评价专家工作是否能实现审计目的" class="md-nav__link">
+    三、评价专家工作是否能实现审计目的
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#165" title="第16章：对集团财务报表的特殊考虑（5）" class="md-nav__link">
+    第16章：对集团财务报表的特殊考虑（5）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_191" title="第一节、集团财报审计的考虑" class="md-nav__link">
+    第一节、集团财报审计的考虑
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_192" title="第二节、财务重大性及特别风险" class="md-nav__link">
+    第二节、财务重大性及特别风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_193" title="第三节、集团层面分析" class="md-nav__link">
+    第三节、集团层面分析
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_194" title="一、 重要性" class="md-nav__link">
+    一、 重要性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_195" title="二、了解集团层面信息" class="md-nav__link">
+    二、了解集团层面信息
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_196" title="第四节：全面或局部审计" class="md-nav__link">
+    第四节：全面或局部审计
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_197" title="第五节：了解组成部分注册会计师" class="md-nav__link">
+    第五节：了解组成部分注册会计师
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_198" title="第六节：集团项目组审计的责任与要求" class="md-nav__link">
+    第六节：集团项目组审计的责任与要求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_199" title="第七节：风险评估（必做）" class="md-nav__link">
+    第七节：风险评估（必做）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_200" title="第八节：评价特别风险" class="md-nav__link">
+    第八节：评价特别风险
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_201" title="第九节：参与组成部分工作的方式" class="md-nav__link">
+    第九节：参与组成部分工作的方式
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_202" title="第十节：与组成部分注册会计师沟通" class="md-nav__link">
+    第十节：与组成部分注册会计师沟通
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_203" title="补充" class="md-nav__link">
+    补充
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#179" title="第17章：其他特殊项目的审计（9）" class="md-nav__link">
+    第17章：其他特殊项目的审计（9）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_204" title="第一节：会计估计审计" class="md-nav__link">
+    第一节：会计估计审计
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_205" title="第二节：关联方审计" class="md-nav__link">
+    第二节：关联方审计
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_206" title="第三节：期初余额审计" class="md-nav__link">
+    第三节：期初余额审计
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_207" title="第四节：持续经营能力假设" class="md-nav__link">
+    第四节：持续经营能力假设
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#184" title="第18章：完成审计工作（4）" class="md-nav__link">
+    第18章：完成审计工作（4）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_208" title="第一节：完成审计工作概述" class="md-nav__link">
+    第一节：完成审计工作概述
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_209" title="一、评价错报" class="md-nav__link">
+    一、评价错报
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-" title="二、复核底稿-内部复核" class="md-nav__link">
+    二、复核底稿-内部复核
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#-_1" title="三、复核底稿-项目质量控制复核" class="md-nav__link">
+    三、复核底稿-项目质量控制复核
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_210" title="第二节：期后事项" class="md-nav__link">
+    第二节：期后事项
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_211" title="一、第一阶段期后事项（财报日至审报日）" class="md-nav__link">
+    一、第一阶段期后事项（财报日至审报日）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_212" title="二、第二阶段期后事项（审计报告日至财报报出日）" class="md-nav__link">
+    二、第二阶段期后事项（审计报告日至财报报出日）
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_213" title="三、第三阶段期后事项（财报报出日后）" class="md-nav__link">
+    三、第三阶段期后事项（财报报出日后）
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_214" title="第三节：管理层声明" class="md-nav__link">
+    第三节：管理层声明
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_215" title="一、声明的性质" class="md-nav__link">
+    一、声明的性质
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_216" title="二、声明的内容" class="md-nav__link">
+    二、声明的内容
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_217" title="三、声明的日期" class="md-nav__link">
+    三、声明的日期
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_218" title="四、与其他证据不一致" class="md-nav__link">
+    四、与其他证据不一致
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_219" title="五、无法表示意见情形" class="md-nav__link">
+    五、无法表示意见情形
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#198" title="第19章：审计报告（8）" class="md-nav__link">
+    第19章：审计报告（8）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_220" title="第一节：审计报告概述" class="md-nav__link">
+    第一节：审计报告概述
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_221" title="一、含义" class="md-nav__link">
+    一、含义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_222" title="二、审计报告日" class="md-nav__link">
+    二、审计报告日
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_223" title="三、补充信息" class="md-nav__link">
+    三、补充信息
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_224" title="第二节：关键审计事项" class="md-nav__link">
+    第二节：关键审计事项
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_225" title="一、关键审计事项定义" class="md-nav__link">
+    一、关键审计事项定义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_226" title="二、关键审计事项决策" class="md-nav__link">
+    二、关键审计事项决策
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_227" title="三、关键审计事项数量" class="md-nav__link">
+    三、关键审计事项数量
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_228" title="四、关键审计事项披露要求" class="md-nav__link">
+    四、关键审计事项披露要求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_229" title="五、关键审计事项不披露的情形" class="md-nav__link">
+    五、关键审计事项不披露的情形
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_230" title="六、关键审计事项的描述" class="md-nav__link">
+    六、关键审计事项的描述
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_231" title="七、关键审计事项的原始信息" class="md-nav__link">
+    七、关键审计事项的原始信息
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_232" title="第三节：非无保留意见" class="md-nav__link">
+    第三节：非无保留意见
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_233" title="一、非无保留意见处理原则" class="md-nav__link">
+    一、非无保留意见处理原则
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_234" title="二、意见统一性" class="md-nav__link">
+    二、意见统一性
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_235" title="第四节：强调事项段和其他事项段" class="md-nav__link">
+    第四节：强调事项段和其他事项段
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_236" title="一、强调事项段" class="md-nav__link">
+    一、强调事项段
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_237" title="二、其他事项段" class="md-nav__link">
+    二、其他事项段
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_238" title="第五节：比较信息" class="md-nav__link">
+    第五节：比较信息
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_239" title="一、对应数据" class="md-nav__link">
+    一、对应数据
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_240" title="二、比较财务报表" class="md-nav__link">
+    二、比较财务报表
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_241" title="第六节：其他信息" class="md-nav__link">
+    第六节：其他信息
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_242" title="一、其他信息含义" class="md-nav__link">
+    一、其他信息含义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_243" title="二、其他信息对注册会计师的要求" class="md-nav__link">
+    二、其他信息对注册会计师的要求
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_244" title="三、其他信息的应对措施" class="md-nav__link">
+    三、其他信息的应对措施
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#204" title="第20章：企业内部控制审计（4）" class="md-nav__link">
+    第20章：企业内部控制审计（4）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_245" title="第一节：内控审计含义" class="md-nav__link">
+    第一节：内控审计含义
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_246" title="第二节：计划内控审计工作" class="md-nav__link">
+    第二节：计划内控审计工作
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_247" title="一、考虑事项" class="md-nav__link">
+    一、考虑事项
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_248" title="二、总体审计策略" class="md-nav__link">
+    二、总体审计策略
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_249" title="三、具体审计计划" class="md-nav__link">
+    三、具体审计计划
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_250" title="第三节：审计实施" class="md-nav__link">
+    第三节：审计实施
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_251" title="第四节：测试控制有效性" class="md-nav__link">
+    第四节：测试控制有效性
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_252" title="第五节：内控缺陷评价" class="md-nav__link">
+    第五节：内控缺陷评价
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_253" title="第六节：内控审计报告" class="md-nav__link">
+    第六节：内控审计报告
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#216" title="第21章：会计师事务所业务质量控制（6）" class="md-nav__link">
+    第21章：会计师事务所业务质量控制（6）
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#226" title="第22章：职业道德基本原则和概念框架（6）" class="md-nav__link">
+    第22章：职业道德基本原则和概念框架（6）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_254" title="第一节：职业道德基本原则" class="md-nav__link">
+    第一节：职业道德基本原则
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_255" title="第二节：职业道德概念框架" class="md-nav__link">
+    第二节：职业道德概念框架
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_256" title="第三节：具体运用" class="md-nav__link">
+    第三节：具体运用
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#236" title="第23章：审计业务对独立性的要求（6）" class="md-nav__link">
+    第23章：审计业务对独立性的要求（6）
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_257" title="第一节：独立性的基础概念" class="md-nav__link">
+    第一节：独立性的基础概念
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_258" title="一、网络事务所" class="md-nav__link">
+    一、网络事务所
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_259" title="二、公众利益实体" class="md-nav__link">
+    二、公众利益实体
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_260" title="三、关联实体" class="md-nav__link">
+    三、关联实体
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_261" title="四、保持独立性期间" class="md-nav__link">
+    四、保持独立性期间
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_262" title="五、近亲属" class="md-nav__link">
+    五、近亲属
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_263" title="六、经济利益" class="md-nav__link">
+    六、经济利益
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_264" title="七、关键审计合伙人" class="md-nav__link">
+    七、关键审计合伙人
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_265" title="第二节：对独立性的影响" class="md-nav__link">
+    第二节：对独立性的影响
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_266" title="一、经济利益" class="md-nav__link">
+    一、经济利益
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_267" title="二、贷款和担保" class="md-nav__link">
+    二、贷款和担保
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_268" title="三、商业关系" class="md-nav__link">
+    三、商业关系
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_269" title="四、家庭和私人关系" class="md-nav__link">
+    四、家庭和私人关系
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_270" title="五、人员交流" class="md-nav__link">
+    五、人员交流
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_271" title="六、长期关系" class="md-nav__link">
+    六、长期关系
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_272" title="七、提供非鉴证服务" class="md-nav__link">
+    七、提供非鉴证服务
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_273" title="八、收费" class="md-nav__link">
+    八、收费
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
                 <h1 id="_1">审计</h1>
 <h2 id="17">第1章：审计概述（7）</h2>
 <h3 id="_2">第一节：审计的概念</h3>
@@ -3478,52 +8675,79 @@
 <li>或有收费：不允许。</li>
 </ol>
 <p><img alt="审计总体框架.png" src="https://i.loli.net/2019/08/14/j4zqNADsQWyi7uS.png" /></p>
+                
+                  
+                
               
-            </div>
+              
+                
+
+
+              
+            </article>
           </div>
-          <footer>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../cg/" class="btn btn-neutral float-right" title="财管">Next <span class="icon icon-circle-arrow-right"></span></a>
-      
-      
-        <a href=".." class="btn btn-neutral" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
-      
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href=".." title="Home" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../cg/" title="财管" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                财管
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
     </div>
   
-
-  <hr/>
-
-  <div role="contentinfo">
-    <!-- Copyright etc -->
-    
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
   </div>
-
-  Built with <a href="http://www.mkdocs.org">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
 </footer>
       
-        </div>
-      </div>
-
-    </section>
-
-  </div>
-
-  <div class="rst-versions" role="note" style="cursor: pointer">
-    <span class="rst-current-version" data-toggle="rst-current-version">
+    </div>
+    
+      <script src="../assets/javascripts/application.245445c6.js"></script>
       
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
       
-        <span><a href=".." style="color: #fcfcfc;">&laquo; Previous</a></span>
-      
-      
-        <span style="margin-left: 15px"><a href="../cg/" style="color: #fcfcfc">Next &raquo;</a></span>
-      
-    </span>
-</div>
-    <script>var base_url = '..';</script>
-    <script src="../js/theme.js" defer></script>
-      <script src="../search/main.js" defer></script>
-
-</body>
+    
+  </body>
 </html>
